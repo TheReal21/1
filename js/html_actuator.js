@@ -62,12 +62,13 @@ HTMLActuator.prototype.addTile = function (tile) {
   // We can't use classlist because it somehow glitches when replacing classes
   var classes = ["tile", "tile-" + tile.value, positionClass];
 
-  if (tile.value > 999999999999999999999999999999999999999999999) classes.push("tile-super");
+  if (tile.value > 99) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
   inner.textContent = tile.value;
+  if (tile.value === 882) inner.textContent = tile.value-800;
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
@@ -131,7 +132,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "Ahh! You got some 12s!" : "X";
+  var message = won ? "1" : "0";
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
@@ -155,11 +156,11 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "12");
+  tweet.setAttribute("data-via", "herdnaxy");
   tweet.textContent = "Tweet";
 
-  var text = "I spawned " + this.score + " this many tiles on 12, a game where you " +
-             "merge tiles to get 12s! #advyout";
+  var text = "I scored " + this.score + " points at 2048, a game where you " +
+             "join numbers to score high! #2048game";
   tweet.setAttribute("data-text", text);
 
   return tweet;
