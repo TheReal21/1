@@ -2,8 +2,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #daecff;
-  color: #2e2e2e;
+  background: #7fd87a;
+  color: #000000;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
@@ -197,7 +197,7 @@ hr {
       .game-container .game-message a.keep-playing-button {
         display: none; }
     .game-container .game-message .score-sharing {      display: inline-block;      vertical-align: middle;      margin-left: 10px; }    .game-container .game-message.game-won {
-      background: #a9f1e3;
+      background: rgba(237, 194, 46, 0.5);
       color: #f9f6f2; }
       .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
@@ -223,7 +223,7 @@ hr {
   margin-right: 6.7px;
   float: left;
   border-radius: 3px;
-  background: #cdc1b4; }
+  background: rgba(238, 228, 218, 0.35); }
   .grid-cell:last-child {
     margin-right: 0; }
 
@@ -502,48 +502,20 @@ hr {
   transition-property: transform; }
   .tile .tile-inner {
     border-radius: 3px;
-    background: #ffffff;
-    color: #f9f6f2;
+    color: #000000;
+    background: #fcfcfb;
     text-align: center;
     font-weight: bold;
     z-index: 10;
     font-size: 30px; }
-  .tile.tile-1 .tile-inner {
-    color: #ffffff;
-    background: #7cbcf9; }
-  .tile.tile-2 .tile-inner {
-    color: #ffffff;
-    background: #7cf9b3; }
-  .tile.tile-3 .tile-inner {
-    color: #ffffff;
-    background: #bef97c; }
-  .tile.tile-4 .tile-inner {
-    color: #ffffff;
-    background: #f9c27c; }
-  .tile.tile-5 .tile-inner {
-    color: #ffffff;
-    background: #f97c8b; }
-  .tile.tile-6 .tile-inner {
-    color: #ffffff;
-    background: #e27cf9; }
-  .tile.tile-7 .tile-inner {
-    color: #ffffff;
-    background: #857cf9; }
-  .tile.tile-8 .tile-inner {
-    color: #ffffff;
-    background: #cdcdcd; }
-  .tile.tile-9 .tile-inner {
-    color: #ffffff;
-    background: #269c00; }
-  .tile.tile-10 .tile-inner {
-    color: #ffffff;
-    background: #009c90; }
-  .tile.tile-11 .tile-inner {
-    color: #ffffff;
-    background: #eef5f5; }
-  .tile.tile-12 .tile-inner {
-    color: #ffffff;
-    background: #000000; }
+  .tile.tile-super .tile-inner {
+    color: #000000;
+    background: #fcfcfb;
+    font-size: 26px; }
+  .tile.tile-882 .tile-inner {
+    color: #f5dcc9;
+    background: #b38c6f;
+    font-size: 30px; }
 
 @-webkit-keyframes appear {
   0% {
