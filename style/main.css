@@ -512,47 +512,27 @@ hr {
     color: #000000;
     background: #fcfcfb;
     font-size: 26px; }
+  .tile.tile-881 .tile-inner {
+    color: #89e847;
+    background: #0c1755;
+    font-size: 30px; }
   .tile.tile-882 .tile-inner {
     color: #f5dcc9;
     background: #b38c6f;
     font-size: 30px; }
-  .tile.tile-501 .tile-inner {
-    color: #e20000;
-    background: #e20000;
-    font-size: 1px; }
-  .tile.tile-502 .tile-inner {
-    color: #0ee70e;
-    background: #0ee70e;
-    font-size: 1px; }
-  .tile.tile-503 .tile-inner {
-    color: #1e43ff;
-    background: #1e43ff;
-    font-size: 1px; }
-  .tile.tile-504 .tile-inner {
-    color: #0cffe5;
-    background: #0cffe5;
-    font-size: 1px; }
-  .tile.tile-505 .tile-inner {
-    color: #9715f7;
-    background: #9715f7;
-    font-size: 1px; }
-  .tile.tile-506 .tile-inner {
-    color: #ffff1c;
-    background: #ffff1c;
-    font-size: 1px; }
-  .tile.tile-507 .tile-inner {
-    color: #ff4fc2;
-    background: #ff4fc2;
-    font-size: 1px; }
-  .tile.tile-508 .tile-inner {
-    color: #ff7e00;
-    background: #ff7e00;
-    font-size: 1px; }
-  .tile.tile-509 .tile-inner {
-    color: #787878;
-    background: #787878;
-    font-size: 1px; }
-
+  .tile.tile-883 .tile-inner {
+    color: #eae84c;
+    background: #2a8c45;
+    font-size: 30px; }
+  .tile.tile-884 .tile-inner {
+    color: #1fc018;
+    background: #b7bd64;
+    font-size: 30px; }
+  .tile.tile-11111111 .tile-inner {
+    color: #000000;
+    background: #fcfcfb;
+    font-size: 11px; }
+  
 @-webkit-keyframes appear {
   0% {
     opacity: 0;
